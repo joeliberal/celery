@@ -9,3 +9,11 @@ def add(x, y):
 def div(x,y):
     return x/y
 
+@app.task
+def sub(x, y):
+    return x-y
+
+@app.task
+def avg(l):
+    return sum(l)/len(l)
+
