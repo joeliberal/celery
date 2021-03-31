@@ -1,7 +1,8 @@
-from __future__ import absolute_import, unicode_literals
 from .celery import app
 
-@app.task
+
+
+@app.task(name='sum_of_tow_number')#default name task is name function
 def add(x, y):
     return x+y
 
