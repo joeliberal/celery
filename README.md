@@ -16,8 +16,14 @@ in dictionery
 ```
 ### step_3 create app 
 ```
-errors
-fiiles
-tasks
+group
+tasks routers
+```
+
+### step_4 separation
+```
+error
+message info
+
 ```
 ***
