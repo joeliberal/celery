@@ -3,7 +3,7 @@ for project big
 '''
 from celery import Celery
 
-app = Celery('way_1')
+app = Celery('way_3')
 
 app.config_from_object('celeryconfig')
 
