@@ -1,6 +1,6 @@
 from celery import Celery
 
-app = Celery('way_1')
+app = Celery('way_other')
 
 
 class Config:
