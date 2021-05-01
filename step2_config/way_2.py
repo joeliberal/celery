@@ -4,7 +4,7 @@ for projet medium
 
 from celery import Celery
 
-app = Celery('way_1')
+app = Celery('way_2')
 
 app.conf.update(
     broker_url = 'redis://localhost:6379',
