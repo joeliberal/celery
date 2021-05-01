@@ -10,10 +10,10 @@ redis-server
 ps aux | grep redis ---> for show id active
 kill -9 id ---> for kill id active
 '''
-#we just can use of mongo for backend='mongo://localhost:27017/' don't brocker and neccesry to instal pymongo
+#we just can use of mongodb for backend='mongo://localhost:27017/' don't brocker and neccesry to instal pymongo
 from celery import Celery
 
-app = Celery('redis_celery',backend='mongo://localhost:27017/', broker='redis://localhost:6379')
+app = Celery('mongodb_celery',backend='mongo://localhost:27017/', broker='redis://localhost:6379')
 
 @app.task
 def add(x,y):
